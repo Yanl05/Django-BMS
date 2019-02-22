@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>这是模板语言测试的页面</h1>
+{% if a > b and b > c %}
+    <p>哈哈哈</p>
+    {% else %}
+    <p>呵呵呵</p>
+{% endif %}
+<hr>
+{{ d.items }}
+{% for k, v in d.items %}
+    {{ k }}-{{ v }}
+{% endfor %}
+<hr>
+
+<p>文件大小：{{ file_size|filesizeformat }}</p>
+<p>切片：{{ name_list|slice:"1:-1" }}</p>
+<p>切片：{{ file_size|slice:"1:2" }}</p>
+<p>时间格式化：{{ now|date:"Y-m-d H:i:s" }}</p>
+<p>a标签：{{ a_html|safe }}</p>
+<p>script标签：</p>{{ script_html }}
+<p>大段文本显示摘要：{{ p_str|truncatechars:20 }}</p>
+
+<p>自定义的filter方法:</p>
+{% load myfilter %}
+{{ name|sb }}
+{{ name_list.0|addstr:"好喝！" }}
+<hr>
+<p>for循环</p>
+<ul>
+    {% for name in name_list %}
+        <li class="{% if forloop.first %}'sb'{% endif %}">{{ forloop.revcounter }}-{{ name }}</li>
+    {% endfor %}
+</ul>
+
+<p>双层循环</p>
+{% for name in name_list2 %}
+    {% for name1 in name %}
+        {{ forloop.parentloop.counter }}
+        {{ name1 }}
+    {% endfor %}
+{% endfor %}
+
+<hr>
+{{ name }}-{{ name|length }} {{ age }}
+{{ buzunzai|default:"这个变量并没有传值，使用的默认值" }}
+<hr>
+{{ name_list }}
+<ul>
+    {% for i in name_list %}
+        <li>{{ i }}</li>
+    {% endfor %}
+</ul>
+
+{{ name_list.1 }}
+<hr>
+{{ name_dict.first_name }}|{{ name_dict.last_name }}
+<hr>
+{{ person1 }}
+{{ person1.name }}|{{ person1.age }}
+{{ person1.dream }}
+<hr>
+{{ p_list }}
+{{ p_list.0.name }}
+</body>
+</html>

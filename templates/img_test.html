@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+{#<img src="/static/111.jpg" alt="">#}
+{% load static %}
+<img src="{% static '111.jpg' as xiaomao %}" alt="">
+<img src="{{ xiaomao }}" alt="">
+<img src="{{ xiaomao }}" alt="">
+
+{% load mysimpletag %}
+<li>{% mysum 'kele' 'xuebi' 'fenda' %}
+</li>
+
+{% show_result 10 %}
+
+</body>
+</html>
