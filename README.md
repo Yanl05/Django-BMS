@@ -22,15 +22,15 @@
 
 >6.静态文件的写法 <br>
 ```
-{% load static %} <br>
-{% static 'jQuery-3.3.1.js' %} <br>
+{% load static %}
+{% static 'jQuery-3.3.1.js' %}
 ```
 
 ```
-{# 常用名保存为简称 #} <br>
-{% load static %} <br>
-<img src="{% static '111.jpg' as xiaomao %}" alt=""> # 不显示 <br>
-<img src="{{ xiaomao }}" alt=""> <br>
+{# 常用名保存为简称 #}
+{% load static %}
+<img src="{% static '111.jpg' as xiaomao %}" alt=""> # 不显示
+<img src="{{ xiaomao }}" alt="">
 ```
 
 >7.自定义simple_tag和inclusion_tag  <br>
