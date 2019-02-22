@@ -9,7 +9,7 @@
 * ORM操作MySQL中的数据，对数据进行增删查改。 <br>
 
 `涉及Django模板语言中的点：` <br>
->1.变量相关：{{ }}
+>1.变量相关：{{ }} <br>
 >2.逻辑相关：{% if|for %}
 >3.filter
 >>内置filter / 自定义filter
