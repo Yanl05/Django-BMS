@@ -1,5 +1,5 @@
 # Django-BMS
-图书管理系统
+##图书管理系统
 
 三种角色：书籍、出版社、作者
 角色间的关系：
@@ -21,11 +21,11 @@ ORM操作MySQL中的数据，对数据进行增删查改。
 		{% load static %}
 		{% static 'jQuery-3.3.1.js' %}
 		
-		{# 常用名保存为简称 #}
-		{% load static %}
-		<img src="{% static '111.jpg' as xiaomao %}" alt=""> # 不显示
-		<img src="{{ xiaomao }}" alt="">
+		{# 常用名保存为简称 #}<br>
+		{% load static %}<br>
+		<img src="{% static '111.jpg' as xiaomao %}" alt=""> # 不显示<br>
+		<img src="{{ xiaomao }}" alt=""><br>
 		
-	7.自定义simple_tag和inclusion_tag 
-		simple_tag： 和自定义filter类似，可以接受更灵活的参数
-		inclusion_tag： 用于返回html代码片段
+	7.自定义simple_tag和inclusion_tag <br>
+		simple_tag： 和自定义filter类似，可以接受更灵活的参数<br>
+		inclusion_tag： 用于返回html代码片段<br>
