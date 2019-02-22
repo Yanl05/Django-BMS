@@ -21,16 +21,18 @@
 >>{% include 'xxx.html'%} <br>
 
 >6.静态文件的写法 <br>
-	```html
-		{% load static %}
-		{% static 'jQuery-3.3.1.js' %}
-		```
-		```html
-		{# 常用名保存为简称 #} <br>
-		{% load static %} <br>
-		<img src="{% static '111.jpg' as xiaomao %}" alt=""> # 不显示 <br>
-		<img src="{{ xiaomao }}" alt=""> <br>
-		```
+```
+{% load static %} <br>
+{% static 'jQuery-3.3.1.js' %} <br>
+```
+
+```
+{# 常用名保存为简称 #} <br>
+{% load static %} <br>
+<img src="{% static '111.jpg' as xiaomao %}" alt=""> # 不显示 <br>
+<img src="{{ xiaomao }}" alt=""> <br>
+```
+
 >7.自定义simple_tag和inclusion_tag  <br>
 >>simple_tag： 和自定义filter类似，可以接受更灵活的参数 <br>
 >>inclusion_tag： 用于返回html代码片段 <br>
