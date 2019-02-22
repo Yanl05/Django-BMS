@@ -10,14 +10,14 @@
 
 `涉及Django模板语言中的点：` <br>
 >1.变量相关：{{ }} <br>
->2.逻辑相关：{% if|for %}
+>2.逻辑相关：{% if|for %} <br>
 >3.filter
 >>内置filter / 自定义filter
->4.母版和继承
+>4.母版和继承 <br>
 >>base.html / {% extends 'base.html' %}
->5.组件
+>5.组件 <br>
 >>{% include 'xxx.html'%}
->6.静态文件的写法
+>6.静态文件的写法 <br>
 	```html
 		{% load static %}
 		{% static 'jQuery-3.3.1.js' %}
