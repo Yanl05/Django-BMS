@@ -9,16 +9,16 @@
 * ORM操作MySQL中的数据，对数据进行增删查改。 <br>
 
 `涉及Django模板语言中的点：` <br>
-* 1.变量相关：{{ }}
-* 2.逻辑相关：{% if|for %}
-* 3.filter
-*	内置filter / 自定义filter
-* 4.母版和继承
-* 	base.html / {% extends 'base.html' %}
-* 5.组件
-* 	{% include 'xxx.html'%}
-* 6.静态文件的写法
-		```html
+>1.变量相关：{{ }}
+>2.逻辑相关：{% if|for %}
+>3.filter
+>>内置filter / 自定义filter
+>4.母版和继承
+>>base.html / {% extends 'base.html' %}
+>5.组件
+>>{% include 'xxx.html'%}
+>6.静态文件的写法
+	```html
 		{% load static %}
 		{% static 'jQuery-3.3.1.js' %}
 		```html
@@ -27,6 +27,6 @@
 		<img src="{% static '111.jpg' as xiaomao %}" alt=""> # 不显示 <br>
 		<img src="{{ xiaomao }}" alt=""> <br>
 		
-* 7.自定义simple_tag和inclusion_tag  <br>
-* 	simple_tag： 和自定义filter类似，可以接受更灵活的参数 <br>
-* 	inclusion_tag： 用于返回html代码片段 <br>
+>7.自定义simple_tag和inclusion_tag  <br>
+>>simple_tag： 和自定义filter类似，可以接受更灵活的参数 <br>
+>>inclusion_tag： 用于返回html代码片段 <br>
