@@ -13,10 +13,13 @@
 >2.逻辑相关：{% if|for %} <br>
 >3.filter
 >>内置filter / 自定义filter <br>
+
 >4.母版和继承 <br>
 >>base.html / {% extends 'base.html' %} <br>
+
 >5.组件 <br>
 >>{% include 'xxx.html'%} <br>
+
 >6.静态文件的写法 <br>
 	```html
 		{% load static %}
