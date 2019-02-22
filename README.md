@@ -12,21 +12,22 @@
 >1.变量相关：{{ }} <br>
 >2.逻辑相关：{% if|for %} <br>
 >3.filter
->>内置filter / 自定义filter
+>>内置filter / 自定义filter <br>
 >4.母版和继承 <br>
->>base.html / {% extends 'base.html' %}
+>>base.html / {% extends 'base.html' %} <br>
 >5.组件 <br>
->>{% include 'xxx.html'%}
+>>{% include 'xxx.html'%} <br>
 >6.静态文件的写法 <br>
 	```html
 		{% load static %}
 		{% static 'jQuery-3.3.1.js' %}
+		```
 		```html
 		{# 常用名保存为简称 #} <br>
 		{% load static %} <br>
 		<img src="{% static '111.jpg' as xiaomao %}" alt=""> # 不显示 <br>
 		<img src="{{ xiaomao }}" alt=""> <br>
-		
+		```
 >7.自定义simple_tag和inclusion_tag  <br>
 >>simple_tag： 和自定义filter类似，可以接受更灵活的参数 <br>
 >>inclusion_tag： 用于返回html代码片段 <br>
