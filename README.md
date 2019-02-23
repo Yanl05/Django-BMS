@@ -27,7 +27,7 @@
 ```
 
 ```
-{# 常用名保存为简称 #}
+{# 常用路径保存为一个变量 #}
 {% load static %}
 <img src="{% static '111.jpg' as xiaomao %}" alt=""> # 不显示
 <img src="{{ xiaomao }}" alt="">
